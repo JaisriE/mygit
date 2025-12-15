@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Store Form</title>
+</head>
+<body bgcolor="#d8f3dc">
+<center>
+
+<h1>Book Store - Order Form</h1>
+<hr>
+
+<form action="exfp.php" method="POST">
+
+<fieldset style="width:40%;">
+    <legend><b>Customer Details</b></legend>
+    Full Name: <input type="text" required name="fn"><br><br>
+    Email: <input type="email" required name="em"><br><br>
+    Phone: <input type="tel" name="phno"><br><br>
+</fieldset>
+<br>
+
+<fieldset style="width:40%;">
+    <legend><b>Book Details</b></legend>
+    Book Title: <input type="text" required name="bt"><br><br>
+    Author: <input type="text" name="a"><br><br>
+    Category:
+    <select name="category" >
+        <option>Fiction</option>
+        <option>Non-Fiction</option>
+        <option>Comics</option>
+        <option>Education</option>
+        <option>Biography</option>
+    </select><br><br>
+    Format:
+    <input type="radio" name="format">Hardcopy
+    <input type="radio" name="format">E-book<br><br>
+    Quantity: <input type="number" min="1" name="quantity" value="1"><br><br>
+</fieldset>
+<br>
+
+<fieldset style="width:40%;">
+    <legend><b>Delivery Address</b></legend>
+    <textarea rows="4" cols="40" placeholder="Enter your full address" name="add"></textarea>
+</fieldset>
+<br>
+
+<fieldset style="width:40%;">
+    <legend><b>Payment Method</b></legend>
+    <select name="pay">
+        <option>Cash on Delivery</option>
+        <option>UPI</option>
+        <option>Net Banking</option>
+        <option>Card Payment</option>
+    </select><br><br>
+</fieldset>
+<br>
+<br>
+<input type="submit" name="submit" value="submit">
+
+</form>
+
+</center>
+</body>
+</html>
